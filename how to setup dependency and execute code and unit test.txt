@@ -1,0 +1,22 @@
+set up dependency and execute code and unit test
+1.npm init
+2.npm install --save-dev mocha chai ts-node typescript @types/mocha @types/chai 
+	จะได้หน้าตาแบบนี้
+	
+	"devDependencies": {
+    		"@types/chai": "^4.3.4",
+    		"@types/mocha": "^10.0.1",
+   		"chai": "^4.3.7",
+    		"mocha": "^10.2.0",
+    		"ts-node": "^10.9.1",
+    		"typescript": "^4.9.5"
+  	}
+
+3.แก้ package.json
+	
+	"scripts": {
+    		"test": "mocha --require ts-node/register merge_func_test.test.ts" // ใส่เป็นชื่อไฟล์ test ลงไปในที่นี้คือ merge_func_test.test.ts
+ 	 }
+  
+4.npm test เพื่อ execute ไฟล์ test
+
